@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ -z "$WORKSPACE" ]; then
+    echo "Need to set WORKSPACE"
+    exit 1
+fi 
+
 # build directory
 BUILD_DIR="${WORKSPACE}/build/release"
 
